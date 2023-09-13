@@ -1,8 +1,14 @@
 body{
     text-align:center;
     background:#e6e6fa;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
   }
+
+div{
+    text-align: justify;
+    text-indent: 30px;
+    margin-bottom: 30px;
+}
 
 .image_one{
     width: 30%;
@@ -13,4 +19,15 @@ body{
     font-size: 22px;
     margin-left: auto;
     padding: 1%;
-  }
+}
+
+.image_two{
+    width: 30%;
+    height: 40%;
+    border: 3px solid white;
+    color: white;
+    border-radius: 20%;
+    font-size: 22px;
+    margin-left: auto;
+    padding: 1%;
+}
