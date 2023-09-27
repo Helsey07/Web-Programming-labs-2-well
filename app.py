@@ -188,4 +188,5 @@ def tulen():
 @app.route('/lab2/example')
 def example():
     name = 'Петровичев Егор Василич'
-    return render_template('example.html', name=name)
+    number_lab = 'Лабораторная работа №2'
+    return render_template('example.html', name=name, number_lab=number_lab)
