@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block lab %}Лабораторная работа №2{% endblock %}
+
+{% block main %}
+    <h1>Кросовки</h1>
+    <div>
+        <div>
+            <img class="image_one" class="image_two", src={{url_for('static', filename='shoes1.jpg')}}>
+            <h2>Текст на ваш вкус</h2>
+        </div>
+        
+        <div>
+            <img class="image_one" class="image_two", src={{url_for('static', filename='shoes2.jpg')}}>
+            <h2>Текст на ваш вкус</h2>
+        </div>
+
+        <div>
+            <img class="image_one" class="image_two", src={{url_for('static', filename='shoes3.jpg')}}>
+            <h2>Текст на ваш вкус</h2>
+        </div>
+
+        <div>
+            <img class="image_one" class="image_two", src={{url_for('static', filename='shoes4.jpg')}}>
+            <h2>Текст на ваш вкус</h2>
+        </div>
+
+        <div>
+            <img class="image_one" class="image_two", src={{url_for('static', filename='shoes5.jpg')}}>
+            <h2>Текст на ваш вкус</h2>
+        </div>
+    </div>
+{% endblock %}
