@@ -1,4 +1,4 @@
-from flask import Flask, redirect, url_for
+from flask import Flask, redirect, url_for, render_template
 
 app = Flask(__name__)
 
@@ -49,7 +49,7 @@ def lab1():
             <title>
                 Петровичев Егор Васильевич, Лабораторная 112121
             </title>
-            <link rel="stylesheet" href="''' +url_for('static', filename='lab1.css') + '''"">
+            <link rel="stylesheet" href="''' +url_for('static', filename='lab1.css') + '''">
         </head>
 
         <body>
@@ -184,3 +184,7 @@ def tulen():
         </body>
     </html>
 '''
+
+@app.route('/lab2/example')
+def example():
+    return render_template('example.html')
