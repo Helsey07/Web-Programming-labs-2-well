@@ -189,4 +189,7 @@ def tulen():
 def example():
     name = 'Петровичев Егор Василич'
     number_lab = 'Лабораторная работа №2'
-    return render_template('example.html', name=name, number_lab=number_lab)
+    group = 'ФБИ-13'
+    course = '3 курс'
+
+    return render_template('example.html', name=name, number_lab=number_lab, group=group, course=course)
