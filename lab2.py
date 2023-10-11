@@ -1,8 +1,6 @@
 from flask import Blueprint, redirect, url_for, render_template
-from lab1 import lab1
 
 lab2 = Blueprint('lab2', __name__)
-lab2.register_blueprint(lab1)
 
 @lab2.route('/lab2/example')
 def example():
