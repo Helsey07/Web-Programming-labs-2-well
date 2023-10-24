@@ -15,7 +15,6 @@ def form1():
     if user == '':
         errors['user'] = 'Заполните поле!'
 
-
     age = request.args.get('age')
 
     if age == '':
@@ -52,3 +51,38 @@ def pay():
 @lab3.route('/lab3/success')
 def success():
     return render_template('success.html')
+
+@lab3.route('/lab3/bilet')
+def bilet():
+    return render_template('bilet.html')
+
+
+@lab3.route('/lab3/pay_billet')
+def pay_billet():
+    price = 0
+
+    surname = request.args.get('surname')
+    name = request.args.get('name')
+    patronymic = request.args.get('patronymic')
+
+    age = request.args.get('age')
+    sickle = request.args.get('sickle')
+    number = request.args.get('number')
+
+    type_bilet = request.args.get('type_bilet')
+    type_shelf = request.args.get('type_shelf')
+
+    departure_point = request.args.get('departure_point')
+    piece_of_luggage = request.args.get('piece_of_luggage')
+    place_of_arrival = request.args.get('place_of_arrival')
+
+    date_start = request.args.get('date_start')
+    date_finish = request.args.get('date_finish')
+
+    return render_template('pay_billet.html', price=price, surname=surname, name=name, patronymic=patronymic,
+                           age=age, sickle=sickle, number=number, type_bilet=type_bilet,
+                           type_shelf=type_shelf,departure_point=departure_point, place_of_arrival=place_of_arrival,
+                           date_start=date_start, date_finish=date_finish,
+                           piece_of_luggage=piece_of_luggage)
+
+

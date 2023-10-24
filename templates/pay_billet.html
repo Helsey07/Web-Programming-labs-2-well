@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block lab %}Лабораторная работа №3{% endblock %}
+{% block main %}
+ <h1>БИЛЕТ</h1>
+ <div>Фамилия: {{ surname }}</div><br>
+ <div>Имя: {{ name }}</div><br>
+ <div>Отчество: {{ patronymic }}</div><br>
+ <div>Возраст: {{ age }}</div><br>
+ <div>Серия паспорта:{{ sickle }}</div><br>
+ <div>Номер паспорта:{{ number }}</div><br>
+ <div>Место под багаж:  {{ 'Да' if piece_of_luggage == 'piece_of_luggage_1' 
+ else 'Нет' }}</div>
+ <div>Тип билета:{{ 'Детский' if type_bilet == 'children' else 'Взрослый' }}</div><br>
+<div>
+    Тип полки: {{ 'Нижняя' if type_shelf == 'shelf1' 
+    else 'Верхняя' if type_shelf == 'shelf2' 
+    else 'Верхняя боковая' if type_shelf == 'shelf3' 
+    else 'Нижняя боковая' }}
+</div><br>
+ <div>Место отправки: {{ departure_point }}</div><br>
+ <div>Место прибытия: {{ place_of_arrival }}</div><br>
+ <div>Дата отправки: {{ date_start }}</div><br>
+ <div>Дата прибытия {{ date_finish }}</div>
+
+ <a href="/lab3/bilet">Вернуться</a>
+{% endblock %}
+
+

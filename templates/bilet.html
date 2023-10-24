@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% block lab %}Лабораторная работа №3{% endblock %}
+{% block main %}
+    <h1>Чтобы купить билет, заполните свои данные.</h1>
+
+    <div style="display: flex; font-size: 30pt;">
+        <div>Личные данные:</div>
+        <div style="margin-left: 10%;">Данные о поездке:</div>
+    </div>
+    <form action="/lab3/pay_billet">
+        <div style="display: flex;">
+            <div class="full_name">
+                <div>
+                    <input class="box" type="text" placeholder="Фамилия" name="surname" value="{{ surname or '' }}">
+                </div>
+                <div>
+                    <input class="box" type="text" placeholder="Имя" name="name" value="{{ name or '' }}">
+                </div>
+                <div>
+                    <input class="box" type="text" placeholder="Отчество" name="patronymic" value="{{ patronymic or '' }}">
+                </div>
+            </div>
+
+            <div class="passport">
+                <div>
+                    <input class="box" type="number"
+                    min="18" max="120" step="1" placeholder="Возраст" name="age" value="{{ age }}">
+                </div>
+
+                <div>
+                    <input class="box" type="text"
+                    maxlength="4" pattern="\d{4}" placeholder="Серия паспорта" name="sickle" value="{{ sickle }}">
+                </div>
+
+                <div>
+                    <input class="box" type="text"
+                    maxlength="6" pattern="\d{6}" placeholder="Номер паспорта" name="number" value="{{ number }}">
+                </div>
+            </div>
+
+            <div class="data_bilet">
+                <div>
+                    <label>Тип билета:</label><br>
+                    <select class="box2" name="type_bilet">
+                        <option value="children" {{ type_bilet == 'children' and 'selected' }}>Детский</option>
+                        <option value="adult"{{ type_bilet == 'adult' and 'selected' }} >Взрослый</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>Тип полки:</label><br>
+                    <select class="box2" name="type_shelf">
+                        <option value="shelf1" {{ type_shelf == 'shelf1' and 'selected' }}>Нижняя</option>
+                        <option value="shelf2"{{ type_shelf == 'shelf2' and 'selected' }} >Верхняя</option>
+                        <option value="shelf3" {{ type_shelf == 'shelf3' and 'selected' }}>Верхняя боковая</option>
+                        <option value="shelf4"{{ type_shelf == 'shelf4' and 'selected' }} >Нижняя боковая</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="departure">
+                <div>
+                    <input class="box3" type="text" placeholder="Место выезда" name="departure_point" value="{{ departure_point or '' }}">
+                </div>
+                <div>
+                    <input class="box3" type="text" placeholder="Место прибытия" name="place_of_arrival" value="{{ place_of_arrival or '' }}">
+                </div>
+
+                <div style="padding-left: 17%;">
+                    <label>Место под багаж:</label>
+                    <select class="box6" name="piece_of_luggage">
+                        <option value="piece_of_luggage_1" {{ piece_of_luggage == 'piece_of_luggage_1' and 'selected' }}>Да</option>
+                        <option value="piece_of_luggage_2" {{ piece_of_luggage == 'piece_of_luggage_2' and 'selected' }} >Нет</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="date">
+
+                <div>
+                    <label>Дата отправки:</label>
+                    <input class="box4" type="date" id="date" name="date_start">
+                </div>
+
+
+                <div>
+                    <label>Дата прибытия:</label>
+                    <input class="box4" type="date" id="date" name="date_finish">
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <button class="box5" type="submit">Оплатить</button>
+        </div>
+    </form>
+{% endblock %}
