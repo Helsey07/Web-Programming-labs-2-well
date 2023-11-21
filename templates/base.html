@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Петровичев Егор. {% block lab %}{% endblock %}</title>
     <link rel="stylesheet" href="{{url_for('static', filename='main.css') }}">
+
+    {% if request.cookies.get('color') %}
+    <style>
+        body main {
+            color: {{ request.cookies.get('color') }};
+        }
+    </style>
+    {% endif %}
 </head>
 <body>
     <header>
@@ -13,6 +21,8 @@
 
     <main>
         {% block main %}{% endblock %}
+
+        <a href="/menu">ГЛАВНОЕ МЕНЮ</a>
     </main>
 
     <footer>
