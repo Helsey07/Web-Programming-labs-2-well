@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Петровичев Егор. {% block lab %}{% endblock %}</title>
-    <link rel="stylesheet" href="{{url_for('static', filename='main.css') }}">
-
+    <title>Itegelova Victoria. {% block lab %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     {% if request.cookies.get('color') %}
     <style>
-        body main {
+        body {
             color: {{ request.cookies.get('color') }};
+            background-color: {{ request.cookies.get('color_bg') }};
+            font-size: {{ request.cookies.get('font_size') }}px;
         }
     </style>
     {% endif %}
