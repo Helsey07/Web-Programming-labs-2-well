@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block lab %} Лабораторная работа 6 {% endblock %}
+
+{% block main %}
+<header style="display: flex; background-color: white;">
+    <div style="color: blue; margin: 30px; font-size: 20pt; font-weight: bold;">База знаний</div>
+    <div style="margin: 35px; text-decoration: none;"><a style="text-decoration: none;" href="/lab6/list_articles">Посмотреть заметки</a></div>
+    <div style="margin: 35px;"><a style="text-decoration: none;" href="/lab6/newtitle6">Создать заметки</a></div>
+    <form action="/lab6/login6">
+        <button style="
+            background-color: white; 
+            border: solid blue 3px; 
+            border-radius: 12px;
+            font-size: 13pt;
+            padding: 5px 20px;
+            margin: 30px;
+            cursor: pointer;" 
+        
+            type="submit">Логин</button>
+    </form>
+    <form  action="/lab6/register6">
+        <button style="
+            background-color: blue; 
+            border: solid blue 3px; 
+            border-radius: 12px;
+            font-size: 13pt;
+            padding: 5px 20px;
+            margin: 30px;
+            color: white;
+            cursor: pointer;" 
+
+            type="submit">Регистрация</button>
+    </form>
+    
+    {% if current_user.username %}
+        <div style="
+        font-weight: bold;
+        color: blue;
+        margin-left: 1%;">
+        {{ current_user.username }}</div>
+    {% else %}
+        <div style="
+        font-style: italic;
+        font-size: 14pt;
+        color: blue;
+        margin-left: 1%;
+        margin: 35px;">Anon</div>
+    {% endif %}
+
+    <form  method="POST" action="/lab6/logout6">
+        <button style="
+        background-color: blue; 
+        border: solid blue 3px; 
+        border-radius: 12px;
+        font-size: 13pt;
+        padding: 5px 20px;
+        margin: 30px;
+        color: white;
+        cursor: pointer;"
+        type="submit">Выход</button>
+    </form>
+    
+</header>
+
+
+
+
+    <div>статьи пользователя, {{ current_user.username }}</div>
+    <h1>Мои статьи</h1>
+    <ul>
+        {% for article in articles %}
+        <li>{{ article.title }} <a href="/lab6/articles6/{{ article.id }}">Содержимое статьи (статья {{ article.id }})</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

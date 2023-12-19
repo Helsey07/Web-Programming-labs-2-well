@@ -11,13 +11,13 @@
         <div style="display: flex;">
             <div class="full_name">
                 <div>
-                    <input class="box" type="text" placeholder="Фамилия" name="surname" value="{{ surname or '' }}">
+                    <input class="box" type="text" placeholder="Фамилия" name="surname" value="{{ surname or '' }}" required>
                 </div>
                 <div>
-                    <input class="box" type="text" placeholder="Имя" name="name" value="{{ name or '' }}">
+                    <input class="box" type="text" placeholder="Имя" name="name" value="{{ name or '' }}"required>
                 </div>
                 <div>
-                    <input class="box" type="text" placeholder="Отчество" name="patronymic" value="{{ patronymic or '' }}">
+                    <input class="box" type="text" placeholder="Отчество" name="patronymic" value="{{ patronymic or '' }}"required>
                 </div>
             </div>
 

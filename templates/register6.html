@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block lab %}Лабораторная работа №6{% endblock %}
+
+{% block main %}
+
+    <div style=".center {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 10px 20px;
+      }">
+        <form method="POST"  style="	background: #3c6766;
+	                                    padding: 50px;
+	                                    color: white;
+	                                    margin-right: auto;
+	                                    margin-left: auto;
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        flex-direction: column;">
+            <h1>Страница регистрации</h1>
+                <div>
+                    <label for="username">Логин</label>
+                    <input type="text" name="username" placeholder="username">
+                </div>
+
+                <div>
+                    <label for="password">Пороль</label>
+                    <input type="text" name="password" placeholder="password">
+                </div>
+
+                {% for error in errors %}
+                    <p>{{ errors }}</p>
+                {% endfor %}
+
+                <button type="submit">Зарегистрироваться</button>
+        </form>
+    </div>
+{% endblock %}
