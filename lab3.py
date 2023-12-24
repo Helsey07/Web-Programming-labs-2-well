@@ -59,7 +59,6 @@ def bilet():
 
 @lab3.route('/lab3/pay_billet')
 def pay_billet():
-    price = 0
 
     surname = request.args.get('surname')
     name = request.args.get('name')
@@ -79,7 +78,7 @@ def pay_billet():
     date_start = request.args.get('date_start')
     date_finish = request.args.get('date_finish')
 
-    return render_template('pay_billet.html', price=price, surname=surname, name=name, patronymic=patronymic,
+    return render_template('pay_billet.html', surname=surname, name=name, patronymic=patronymic,
                            age=age, sickle=sickle, number=number, type_bilet=type_bilet,
                            type_shelf=type_shelf,departure_point=departure_point, place_of_arrival=place_of_arrival,
                            date_start=date_start, date_finish=date_finish,

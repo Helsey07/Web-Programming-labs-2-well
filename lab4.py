@@ -43,11 +43,11 @@ def fridge():
             elif temperature > -1:
                 message = "Не удалось установить температуру — слишком высокое значение"
             elif -12 <= temperature <= -9:
-                message = f"Установлена температура: {temperature}°С"
+                message = f"Установлена температура: {temperature}°С" + "*"
             elif -8 <= temperature <= -5:
-                message = f"Установлена температура: {temperature}°С"
+                message = f"Установлена температура: {temperature}°С" + "**"
             elif -4 <= temperature <= -1:
-                message = f"Установлена температура: {temperature}°С"
+                message = f"Установлена температура: {temperature}°С" + "***"
 
     return render_template('fridge.html', message=message, temperature=temperature)
 
