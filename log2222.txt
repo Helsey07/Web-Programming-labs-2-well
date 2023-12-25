@@ -1,0 +1,227 @@
+commit b64dcc4865f54445afe645abd55375682a164c71
+Author: Петровичев Егор <petrushka.love07@mail.ru>
+Date:   Wed Nov 22 02:25:26 2023 +0700
+
+    Фон и размер шрифта
+
+commit bf5763aefe7b072e7f0d2733d39c51d5c04e82cf
+Author: Петровичев Егор <petrushka.love07@mail.ru>
+Date:   Tue Nov 21 19:55:54 2023 +0700
+
+    куки цвет текста
+
+commit f0c902a9b4fff18bf53671682fb280849c8270ee
+Author: Петровичев Егор <petrushka.love07@mail.ru>
+Date:   Tue Nov 21 17:28:10 2023 +0700
+
+    Заказ зерна
+
+commit 406d7f628feb164f93fce976503b0824afa9bfa9
+Author: Петровичев Егор <petrushka.love07@mail.ru>
+Date:   Tue Nov 21 16:33:34 2023 +0700
+
+    Холодильник
+
+commit 0df4490c92781742ea75ecced5e14f20e39fdb47
+Author: Петровичев Егор <petrushka.love07@mail.ru>
+Date:   Wed Nov 8 18:46:40 2023 +0700
+
+    Авторизация
+
+commit 9eec45cd83a90149133f9a498a0a0da6ae1502c4
+Author: Петровичев Егор <petrushka.love07@mail.ru>
+Date:   Wed Nov 8 17:04:08 2023 +0700
+
+    Заготовка к 4 лабораторной
+
+commit 4a79bce15bc02addfb621ad2ffd77d356dc5f4b7
+Author: Петровичев Егор <petrushka.love07@mail.ru>
+Date:   Wed Nov 8 16:57:40 2023 +0700
+
+    Лабораторная работа 4
+
+commit a7cbab48ec48ecb3ac355035f51948b38595cb1f
+Author: Петровичев Егор <petrushka.love07@mail.ru>
+Date:   Tue Oct 24 22:40:15 2023 +0700
+
+    АВИАСЕЙЛС
+
+commit 79429fc1608576018532df2e3ae3f61f670fe599
+Author: Петровичев Егор <petrushka.love07@mail.ru>
+Date:   Wed Oct 11 23:49:19 2023 +0700
+
+    Напитки
+
+commit 6adc2c2ab113de91b5109c4ea204a015931a611e
+Author: Петровичев Егор <petrushka.love07@mail.ru>
+Date:   Wed Oct 11 22:57:44 2023 +0700
+
+    Валидация
+
+commit 4c7acac1b7ff768911202fa443b3a5a46741f61d
+Author: Петровичев Егор <petrushka.love07@mail.ru>
+Date:   Wed Oct 11 22:26:07 2023 +0700
+
+    Корректировка пола
+
+commit 44492c341fbde0ba56a62344ac3bf65e9236a544
+Author: Петровичев Егор <petrushka.love07@mail.ru>
+Date:   Wed Oct 11 17:43:49 2023 +0700
+
+    Форма
+
+commit a266a9b7c91f25e223199dc8c5dd025187f41092
+Author: Петровичев Егор <petrushka.love07@mail.ru>
+Date:   Wed Oct 11 17:12:31 2023 +0700
+
+    Заготовка к 3 лабораторной работе
+
+commit eb3a78e35ffc5b795f6c9ca115b31f91f7840621
+Author: Петровичев Егор <petrushka.love07@mail.ru>
+Date:   Wed Oct 11 17:02:55 2023 +0700
+
+    2
+
+commit 05c0577e42f4beaa6d8a227d9bd0b18affdc9694
+Author: Петровичев Егор <petrushka.love07@mail.ru>
+Date:   Wed Oct 11 17:02:34 2023 +0700
+
+    1
+
+commit 9bf21ba9b671a16ba96e1d70897160fa8c0f37fb
+Author: Петровичев Егор <petrushka.love07@mail.ru>
+Date:   Wed Oct 11 16:41:04 2023 +0700
+
+    Исправление ошибок
+
+commit 7169686f0a7f990a932ec5e0739d9880ee901052
+Author: Петровичев Егор <petrushka.love07@mail.ru>
+Date:   Wed Oct 11 16:37:02 2023 +0700
+
+    Рефакторинг: выделение второй лабораторной
+
+commit 5751c1f456288dcc31cec9cdc39dbccd0d865039
+Author: Петровичев Егор <petrushka.love07@mail.ru>
+Date:   Wed Oct 11 16:33:55 2023 +0700
+
+    Рефакторинг: выделение первой лабораторной
+
+commit 1a55559e9206ee130a990225274fa14f81e27741
+Author: Петровичев Егор <petrushka.love07@mail.ru>
+Date:   Wed Oct 11 16:11:47 2023 +0700
+
+    Лабораторная работа №3
+
+commit 87c28b5befaffe6b404975d6141ae12f6708b3f8
+Author: Петровичев Егор <petrushka.love07@mail.ru>
+Date:   Wed Sep 27 18:18:56 2023 +0700
+
+    Инд задание
+
+commit 4dadf9af95096b6b80d7956abe3dd64ac9b59068
+Author: Петровичев Егор <petrushka.love07@mail.ru>
+Date:   Wed Sep 27 18:04:14 2023 +0700
+
+    наследование шаблонов
+
+commit 81a290ed77b7aac8bf1a4dadf5598237c9152fab
+Author: Петровичев Егор <petrushka.love07@mail.ru>
+Date:   Wed Sep 27 17:33:03 2023 +0700
+
+    Книги
+
+commit 5d57248a6f64a58e82ce49567674b3062a4ea6b7
+Author: Петровичев Егор <petrushka.love07@mail.ru>
+Date:   Wed Sep 27 17:24:21 2023 +0700
+
+    цикл в шаблоне
+
+commit 8d4d1d359cd19fa5e2b3c9b3d4ba49d37ba6fb87
+Author: Петровичев Егор <petrushka.love07@mail.ru>
+Date:   Wed Sep 27 16:58:32 2023 +0700
+
+    условия шаблона
+
+commit c773eff089a11c151b2ec7ea8bb56c9771d167e9
+Author: Петровичев Егор <petrushka.love07@mail.ru>
+Date:   Wed Sep 27 16:37:55 2023 +0700
+
+    Подключение стилей
+
+commit 619ddb1262ba52f06c85da1adc5a5cb95e773738
+Author: Петровичев Егор <petrushka.love07@mail.ru>
+Date:   Wed Sep 27 16:20:26 2023 +0700
+
+    Передача переменных в шаблон
+
+commit 1f10c6866520b65dea03225b6b69d13532f5f9dc
+Author: Петровичев Егор <petrushka.love07@mail.ru>
+Date:   Wed Sep 27 16:16:57 2023 +0700
+
+    Имя студента
+
+commit 0f0124c7f3a7781e7228a8cd9b7aafb1031daf60
+Author: Петровичев Егор <petrushka.love07@mail.ru>
+Date:   Wed Sep 27 16:13:02 2023 +0700
+
+    Заготовка шаблона
+
+commit 6b6f06c24ceccfdefd4a33d97cec43456c7f1354
+Author: Петровичев Егор <petrushka.love07@mail.ru>
+Date:   Wed Sep 27 15:58:11 2023 +0700
+
+    Лабораторная работа №2
+
+commit d0cd88881cd0b921c45feaa84f3e93085c623adb
+Author: Петровичев Егор <petrushka.love07@mail.ru>
+Date:   Wed Sep 13 18:34:01 2023 +0700
+
+    Роуты
+
+commit ff906e27924e8d35fa5f0fe643644316746d4520
+Author: Петровичев Егор <petrushka.love07@mail.ru>
+Date:   Wed Sep 13 17:55:25 2023 +0700
+
+    Статические файлы
+
+commit 89bd3bf7fe8b5a9799324ebd28ffaa3e456efecf
+Author: Петровичев Егор <petrushka.love07@mail.ru>
+Date:   Wed Sep 13 17:21:44 2023 +0700
+
+    Перенаправление
+
+commit 2574f3f47db3a36025e2c38cdaf061ad7928a43b
+Author: Петровичев Егор <petrushka.love07@mail.ru>
+Date:   Wed Sep 13 17:14:23 2023 +0700
+
+    Меню
+
+commit 281af69929f69e01801c47fab5b1ee3f9b3b13d4
+Author: Петровичев Егор <petrushka.love07@mail.ru>
+Date:   Wed Sep 13 16:57:34 2023 +0700
+
+    Добавление в .gitignore
+
+commit f1775b5846da8d7c175b9498eabdd366f8fa4cb8
+Author: Петровичев Егор <petrushka.love07@mail.ru>
+Date:   Wed Sep 13 16:53:52 2023 +0700
+
+    Вывод страницы первой лабораторной
+
+commit 021814eb41759ec0c2515d6ad7402bf4233672f5
+Author: Петровичев Егор <petrushka.love07@mail.ru>
+Date:   Wed Sep 13 16:31:06 2023 +0700
+
+    Первое приложение
+
+commit 678baccffbedcbd04cfbfa44ffc6e41c4b66ec0a
+Author: Петровичев Егор <petrushka.love07@mail.ru>
+Date:   Wed Sep 13 16:23:30 2023 +0700
+
+    Создание .gitignore
+
+commit 390d300f708c881bb66970e9023463a404898090
+Author: Петровичев Егор <petrushka.love07@mail.ru>
+Date:   Wed Sep 13 16:10:46 2023 +0700
+
+    Лабораторная работа 1

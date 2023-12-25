@@ -32,3 +32,84 @@ header{
     color: rgb(255, 0, 0);
     font-size: 18px;
 }
+
+.full_name{
+    padding-top: 2.1%;
+    width: 14%;
+    height: 5%;
+    display:block;
+}
+
+.box{
+    width: 65%;
+    height: 40px;
+    border-radius: 15px;
+    padding-left: 15px;
+
+}
+
+.passport{
+    padding-top: 2.1%;
+    width: 14%;
+    height: 5%;
+    display:block;
+    border-right: 3px solid rgb(0, 0, 0);
+}
+
+.data_bilet{
+    padding-left: 1%;
+    padding-top: 1%;
+    width: 20%;
+    height: 5%;
+}
+
+.box2{
+    width: 70%;
+    height: 40px;
+    border-radius: 15px;
+    padding-left: 20px;
+
+}
+
+.box3{
+    width: 400px;
+    height: 40px;
+    border-radius: 15px;
+    padding-left: 15px;
+}
+
+.departure{
+    padding-top: 2.1%;
+    width: 35%;
+    height: 5%;
+    display:block;
+}
+
+.box4{
+    width: 30%;
+    height: 40px;
+    border-radius: 15px;
+    padding-left: 15px;
+}
+
+.date{
+    padding-top: 2.1%;
+    padding-left: 1%;
+    width: 35%;
+    height: 5%;
+    display:block;
+}
+
+.box5{
+    width: 95%;
+    height: 40px;
+    border-radius: 15px;
+    padding-left: 15px;
+}
+
+.box6{
+    width: 80%;
+    height: 40px;
+    border-radius: 15px;
+    padding-left: 20px;
+}
