@@ -1,8 +1,9 @@
-from flask import blueprints, render_template, request, abort
+from flask import Blueprint, abort, render_template, request, jsonify
 
-lab8 = blueprints('lab8', __name__)
+lab8 = Blueprint('lab8', __name__)
 
 @lab8.route('/lab8/')
 def main():
     return render_template('lab8/index.html')
+
 
