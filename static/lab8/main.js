@@ -3,10 +3,10 @@ function fillCourseList() {
     .then(function (data) {
         return data.json();
     })
-    .then(function(courses) {
+    .then(function (courses) {
         let tbody = document.getElementById('course-list');
         tbody.innerHTML = '';
-        for(let i=0; i<courses.length; i++) {
+        for(let i = 0; i<courses.length; i++) {
             let tr = document.createElement('tr');
 
             let tdName = document.createElement('td');
@@ -18,15 +18,20 @@ function fillCourseList() {
             let tdPrice = document.createElement('td');
             tdPrice.innerText = courses[i].price || 'бесплатно';
 
+            let tdCreatedAt = document.createElement('td'); // Добавляем элемент для даты создания
+            tdCreatedAt.innerText = new Date(courses[i].createdAt).toLocaleDateString();
 
             let editButton = document.createElement('button');
             editButton.innerText = 'редактировать';
+            editButton.onclick = function() {
+                editCourse(i, courses[i]);
+            };
 
             let delButton = document.createElement('button');
             delButton.innerText = 'удалить';
             delButton.onclick = function() {
                 deleteCourse(i);
-            }
+            };
 
             let tdActions = document.createElement('td');
             tdActions.append(editButton);
@@ -36,6 +41,7 @@ function fillCourseList() {
             tr.append(tdVideos);
             tr.append(tdPrice);
             tr.append(tdActions);
+            tr.append(tdCreatedAt); // Добавляем ячейку с датой создания
 
             tbody.append(tr);
         }
@@ -49,4 +55,63 @@ function deleteCourse(num) {
     .then(function () {
         fillCourseList();
     });
+}
+
+function showModal() {
+    document.querySelector('div.modal').style.display = 'block';
+}
+
+function hideModal() {
+    document.querySelector('div.modal').style.display = 'none';
+}
+
+function cancel() {
+    hideModal();
+}
+
+function addCourse() {
+    showModal();
+}
+
+function addCourse() {
+    const course = {}; // Добавляем переменную course
+    delete course.createdAt;
+    document.getElementById('num').value = '';
+    document.getElementById('name').value = '';
+    document.getElementById('videos').value = '';
+    document.getElementById('price').value = '';
+    showModal();
+}
+
+function sendCourse() {
+    const num = document.getElementById('num').value;
+    const course = {
+        name: document.getElementById('name').value,
+        videos: document.getElementById('videos').value,
+        price: document.getElementById('price').value,
+        createdAt: new Date().toString()
+    };
+
+    const url = `/lab8/api/courses/${num}`;
+    const method = num ? 'PUT' : 'POST';
+    fetch(url, {
+        method: method,
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(course)
+    })
+    .then(function () {
+        fillCourseList();
+        hideModal();
+    });
+}
+
+
+function editCourse(num, course) {
+    currentCourse = course;
+    document.getElementById('num').value = num;
+    document.getElementById('name').value = course.name;
+    document.getElementById('videos').value = course.videos;
+    document.getElementById('price').value = course.price;
+    delete course.createdAt;
+    showModal();
 }
